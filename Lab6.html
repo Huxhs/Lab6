@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Box Validation</title>
+<script src="script.js"></script>
+<style>
+    #firstName_error { color:red}
+    #lastName_error { color:red}
+    #mark1_error{color:red}
+    #mark2_error{color:red}
+    #mark3_error{color:red}
+</style>
+
+</head>
+<body>
+    <h1>Lab 6</h1>
+<form>
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" required><br><br>
+<span id="firstName_error">*</span><br>
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName" required><br><br>
+<span id="lastName_error">*</span><br>
+
+<label for="mark1">Mark 1:</label>
+<input type="number" id="mark1" name="mark1" min="0" max="100" required><br><br>
+<span id="mark1_error">*</span><br>
+
+<label for="mark2">Mark 2:</label>
+<input type="number" id="mark2" name="mark2" min="0" max="100" required><br><br>
+<span id="mark2_error">*</span><br>
+
+<label for="mark3">Mark 3:</label>
+<input type="number" id="mark3" name="mark3" min="0" max="100" required><br><br>
+<span id="mark3_error">*</span><br>
+
+<button type="button" onclick="validateTxt()">Validate</button>
+<button type="button" onclick="printResult()">Print Result</button>
+</form>
+
+<p id="result"></p>
